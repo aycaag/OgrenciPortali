@@ -10,6 +10,8 @@ builder.Services.AddDbContext<OgrenciPortaliDbContext>(
 
 builder.Services.AddScoped<IUserService,UserService>();
 builder.Services.AddScoped<IUserRepository,UserRepository>();
+builder.Services.AddScoped<ITeacherRepository,TeacherRepository>();
+builder.Services.AddScoped<ITeacherService,TeacherService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

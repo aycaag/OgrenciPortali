@@ -1,0 +1,82 @@
+@model TeacherListModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3> Öğretmenler Listesi </h3>
+    <form action="/Teacher/TeacherList" method="Post">
+        <select class="form-select" aria-label="Default select example" name="selectedLesson">
+            
+                @if (Model.selectedLesson!=null)
+                {
+                  <option> @Model.selectedLesson</option>
+                }
+                @if (Model.selectedLesson==null)
+                {
+                    <option selected> Ders Seçiniz </option>
+                }
+                
+            @foreach (var item in Model.lessonList)
+            {
+                @if (@item == @Model.selectedLesson)
+                {
+                    <option value="0">Ders Seçiniz</option>
+                    continue;
+                }
+                <option> @item </option>
+            }
+        </select>
+
+    <input type="submit" value="Filtrele">
+</form>
+        <ul>
+            <table>
+                <tr>
+                    <th> <b>ID</b></th>
+                    <th> <b>Ad</b></th>
+                    <th> <b>Soyad</b></th>
+                    <th> <b>Ders</b></th>
+                </tr>
+                @foreach (var item in Model.teacherList)
+                {
+                    <tr>
+                        <th> @item.ID</th>
+                        <th> @item.Name</th>
+                        <th> @item.Surname</th>
+                        <th> @item.Lesson </th>
+                    </tr>
+                }
+            </table>
+
+        </ul>
+  
+
+</body>
+
+</html>
+
+<style>
+    th {
+        border: 1px solid gray;
+        font-weight: lighter;
+        width: 130px;
+
+    }
+
+    tr {
+        border: 1px solid gray;
+
+    }
+
+    h3 {
+        margin-left: 30px;
+    }
+</style>
