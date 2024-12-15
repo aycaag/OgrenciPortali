@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // DB Bağlantısını sağlamak gerek 
 builder.Services.AddDbContext<OgrenciPortaliDbContext>(
-    options => options.UseSqlServer ("Server=localhost;Database=OgrenciPortal;User Id=sa;Password=reallyStrongPwd123 ;Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;")
+    options => options.UseSqlServer ("Server=localhost;Database=OgrenciPortal;User Id=*****;Password=**** ;Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;")
 );
 
 builder.Services.AddScoped<IUserService,UserService>();
