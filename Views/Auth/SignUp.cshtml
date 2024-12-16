@@ -1,4 +1,6 @@
 @model UserViewModel
+@using Helpers;
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +41,9 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div> *@
-        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+        @* <button type="submit" class="btn btn-primary">Giriş Yap</button> *@
+        @Html.SubmitButton("Giriş Yap", "btn btn-primary")
+
     </form>
 
 </body>

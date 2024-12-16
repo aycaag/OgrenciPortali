@@ -1,4 +1,5 @@
 @model UserViewModel
+@using Helpers;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +50,8 @@
 
       @Html.ValidationSummary()
 
-      <button type="submit" class="btn btn-primary">Kaydol</button>
+      @Html.SubmitButton("Kaydol", "btn btn-primary")
+
     </div>
   </form>
 

@@ -46,6 +46,7 @@ public class UserModelValidator : AbstractValidator<UserViewModel>
         RuleFor(x=> x.Email)
             .NotEmpty().WithMessage("Email alanı boş olamaz")
             .Matches(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$")
+            .EmailAddress()
             .WithMessage("Geçerli bir mail adresi giriniz");
 
         RuleFor(x=>x.Password)
