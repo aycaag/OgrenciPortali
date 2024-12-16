@@ -13,8 +13,8 @@
 
     <h3> Öğretmenler Listesi </h3>
     <form action="/Teacher/TeacherList" method="Post">
-        <select class="form-select" aria-label="Default select example" name="selectedLesson">
-            
+        <select aria-label="Default select example" name="selectedLesson">  
+
                 @if (Model.selectedLesson!=null)
                 {
                   <option> @Model.selectedLesson</option>
@@ -34,8 +34,8 @@
                 <option> @item </option>
             }
         </select>
-
     <input type="submit" value="Filtrele">
+
 </form>
         <ul>
             <table>
@@ -73,7 +73,23 @@
 
     tr {
         border: 1px solid gray;
+    }
 
+    select{
+        border:1px solid gray;
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 30px;    
+    }
+    
+    input[type=submit]{
+        border: 1px solid gray;
+        height:30px;
+        width: 100px;
+        margin-bottom: 5px;
     }
 
     h3 {
