@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aycaguler/Development /OgrenciPortali/OgrenciPortali.csproj": {}
+    "/Users/aycaguler/Development/OgrenciPortali/OgrenciPortali.csproj": {}
   },
   "projects": {
-    "/Users/aycaguler/Development /OgrenciPortali/OgrenciPortali.csproj": {
+    "/Users/aycaguler/Development/OgrenciPortali/OgrenciPortali.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aycaguler/Development /OgrenciPortali/OgrenciPortali.csproj",
+        "projectUniqueName": "/Users/aycaguler/Development/OgrenciPortali/OgrenciPortali.csproj",
         "projectName": "OgrenciPortali",
-        "projectPath": "/Users/aycaguler/Development /OgrenciPortali/OgrenciPortali.csproj",
+        "projectPath": "/Users/aycaguler/Development/OgrenciPortali/OgrenciPortali.csproj",
         "packagesPath": "/Users/aycaguler/.nuget/packages/",
-        "outputPath": "/Users/aycaguler/Development /OgrenciPortali/obj/",
+        "outputPath": "/Users/aycaguler/Development/OgrenciPortali/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/aycaguler/.nuget/NuGet/NuGet.Config"

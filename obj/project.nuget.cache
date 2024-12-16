@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E00xwtJVqUI=",
+  "dgSpecHash": "l+zU8J3+3uw=",
   "success": true,
-  "projectFilePath": "/Users/aycaguler/Development /OgrenciPortali/OgrenciPortali.csproj",
+  "projectFilePath": "/Users/aycaguler/Development/OgrenciPortali/OgrenciPortali.csproj",
   "expectedPackageFiles": [
     "/Users/aycaguler/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/aycaguler/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
