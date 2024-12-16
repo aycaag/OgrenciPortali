@@ -1,0 +1,58 @@
+@model UserViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  @if (TempData["Error"] != null)
+  {
+    <div class="alert alert-danger" role="alert">
+      @TempData["Error"]
+    </div>
+  }
+
+  <form action="/Auth/SignIn" method="post">
+    <div>
+      <h3> Üye Ol</h3>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Ad</label>
+        <input name="Name" type="text" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Soyad</label>
+        <input name="Surname" type="text" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input name="Email" type="email" class="form-control" id="exampleInputEmail1">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Şifre</label>
+        <input name="Password" type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Şifre Tekrar</label>
+        <input name="ConfirmPassword" type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+
+      @Html.ValidationSummary()
+
+      <button type="submit" class="btn btn-primary">Kaydol</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
