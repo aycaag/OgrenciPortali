@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OgrenciPortali")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71c77a0244bf4ddd7249f004cc080a96a6ae0786")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b363ca3b05a78c9612108a4c03ece78084c375c")]
 [assembly: System.Reflection.AssemblyProductAttribute("OgrenciPortali")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OgrenciPortali")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
